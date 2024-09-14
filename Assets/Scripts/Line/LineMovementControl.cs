@@ -11,6 +11,7 @@ public class LineMovementControl : MonoBehaviour
 
     private void MoveLine()
     {
-        transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+        // Move the object left in world space
+        transform.Translate(Vector2.left * moveSpeed * Time.deltaTime, Space.World);
     }
 }

@@ -18,11 +18,10 @@ public class LineSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(spawnTime);
-            
-            
 
             // Instantiate the new line object
-            newLineObject = Instantiate(linePrefab, lastLinePrefab.transform.GetChild(0).transform.GetChild(0).GetComponent<Transform>().position, Quaternion.identity);
+            //newLineObject = Instantiate(linePrefab, lastLinePrefab.transform.GetChild(0).transform.GetChild(0).GetComponent<Transform>().position, transform.rotation);
+            newLineObject = Instantiate(linePrefab, lastLinePrefab.transform.GetChild(0).transform.GetChild(0).position, Quaternion.identity);
 
             // Set the new line as the last line
             lastLinePrefab = newLineObject;
