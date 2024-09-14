@@ -395,6 +395,10 @@ GameObject:
   - component: {fileID: 1710572722}
   - component: {fileID: 1710572724}
   - component: {fileID: 1710572723}
+  - component: {fileID: 1710572728}
+  - component: {fileID: 1710572727}
+  - component: {fileID: 1710572726}
+  - component: {fileID: 1710572725}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -536,6 +540,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.05}
   m_EdgeRadius: 0
+--- !u!114 &1710572725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710572720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4327106439664674a9d265fb5764587b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circleInputController: {fileID: 1710572726}
+  rb: {fileID: 1710572722}
+  circleJumpForce: 5
+--- !u!114 &1710572726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710572720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6588d6590f3a0e34c8807a4d9d1685d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTouching: 0
+--- !u!114 &1710572727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710572720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67076f33cee308c478fd76e75a329700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circleInputController: {fileID: 1710572726}
+--- !u!114 &1710572728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710572720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcbc75d9c1e3c040ac7ca9b1dbe2c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
