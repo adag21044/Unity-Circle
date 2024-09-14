@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LineRotation : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private float rotationValue;
+    [SerializeField] private float randomRotation;
+
     void Start()
     {
-        
+        GenerateRandomRotation();
+        SetLineRotation();    
+    }
+    private void GenerateRandomRotation()
+    {
+        randomRotation = Random.Range(-rotationValue, randomRotation);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SetLineRotation()
     {
-        
+        transform.rotation = Quaternion.Euler(0, 0, randomRotation);
     }
 }
