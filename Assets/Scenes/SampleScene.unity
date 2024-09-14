@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d917ab470b2714895d4c3430ca8c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastLinePrefab: {fileID: 1432161381}
+  lastLinePrefab: {fileID: 0}
   linePrefab: {fileID: 2638507488167455118, guid: 5a0b1d6934afc1e4fa11a6c4e0c6f763, type: 3}
   spawnTime: 1
 --- !u!1001 &305758618
@@ -1195,9 +1195,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4327106439664674a9d265fb5764587b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circleInputController: {fileID: 1710572726}
+  circleInputController: {fileID: 0}
   rb: {fileID: 1710572722}
-  circleJumpForce: 5
+  circleJumpForce: 0
 --- !u!114 &1710572726
 MonoBehaviour:
   m_ObjectHideFlags: 0
