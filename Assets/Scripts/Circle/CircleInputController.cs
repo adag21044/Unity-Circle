@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CircleInputController : MonoBehaviour
 {
+    [SerializeField] private CircleDataTransmitter circleDataTransmitter;
     public bool isTouching = false;
 
     private void Update()
@@ -16,6 +17,7 @@ public class CircleInputController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isTouching = true;
+            circleDataTransmitter.IncreaseScoreValue();
         }
         else if (Input.GetMouseButtonUp(0))
         {
